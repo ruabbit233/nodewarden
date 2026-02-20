@@ -145,7 +145,7 @@ export async function handleToken(request: Request, env: Env): Promise<Response>
               429
             );
           }
-          return twoFactorRequiredResponse();
+          return identityErrorResponse('Invalid two-factor token', 'invalid_grant', 400);
         }
       }
 

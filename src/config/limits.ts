@@ -22,7 +22,7 @@
   rateLimit: {
     // Max failed login attempts before temporary lock.
     // 触发临时锁定前允许的最大登录失败次数。
-    loginMaxAttempts: 5,
+    loginMaxAttempts: 10,
     // Login lock duration in minutes.
     // 登录锁定时长（分钟）。
     loginLockoutMinutes: 2,
